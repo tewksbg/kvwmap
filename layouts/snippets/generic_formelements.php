@@ -3,12 +3,15 @@
 								$layer_id = $layer['Layer_ID'];																	# die Layer-ID
 								$dataset = $layer['shape'][$k];																	# der aktuelle Datensatz
 								$name = $attributes['name'][$j];																# der Name des Attributs
+                $type = $attributes['type'][$j];                                # der Type des Attributs in der Datenbank
 								$alias = $attributes['alias'][$j];															# der Aliasname des Attributs
 								$value = $dataset[$name];																				# der Wert des Attributs
 								$tablename = $attributes['table_name'][$name];									# der Tabellenname des Attributs
 								$oid = $dataset[$tablename.'_oid'];															# die oid des Datensatzes
 								$attribute_privileg = $attributes['privileg'][$j];												# das Recht des Attributs
-								$fieldname = $layer_id.';'.$attributes['real_name'][$name].';'.$tablename.';'.$oid.';'.$attributes['form_element_type'][$j].';'.$attributes['nullable'][$j].';'.$attributes['type'][$j];
+								$fieldname = $layer_id.';'.$attributes['real_name'][$name];
+#                if (substr($type, 0, 1) == '_') $fieldname .= '[]';
+                $fieldname .=';'.$tablename.';'.$oid.';'.$attributes['form_element_type'][$j].';'.$attributes['nullable'][$j].';'.$attributes['type'][$j];
 								switch ($attributes['form_element_type'][$j]){
 									case 'Textfeld' : {
 										$datapart .= '<textarea title="'.$alias.'" cols="45" onchange="set_changed_flag(currentform.changed_'.$layer_id.'_'.$oid.')"';
@@ -30,7 +33,7 @@
 											$enum_value = $attributes['enum_value'][$j];
 											$enum_output = $attributes['enum_output'][$j];
 										}
-										$datapart .= Auswahlfeld($layer_id, $name, $j, $alias, $fieldname, $value, $enum_value, $enum_output, $attributes['req_by'][$j], $attributes['name'], $attribute_privileg, $k, $oid, $attributes['subform_layer_id'][$j], $attributes['subform_layer_privileg'][$j], $attributes['embedded'][$j], $lock[$k], $fontsize, $this->strPleaseSelect);
+										$datapart .= Auswahlfeld($layer_id, $name, $j, $alias, $fieldname, $value, $enum_value, $enum_output, $attributes['req_by'][$j], $attributes['name'], $attribute_privileg, $k, $oid, $attributes['subform_layer_id'][$j], $attributes['subform_layer_privileg'][$j], $attributes['embedded'][$j], $lock[$k], $fontsize, $this->strPleaseSelect, $type);
 									}break;
 									
 									case 'Autovervollständigungsfeld' : {
@@ -107,7 +110,7 @@
 														$enum_value = $attributes['enum_value'][$index];
 														$enum_output = $attributes['enum_output'][$index];
 													}
-													$datapart .= Auswahlfeld($layer_id, $name_, $j, $attributes['alias'][$name_], $fieldname_[$f], $dataset[$name_], $enum_value, $enum_output, $attributes['req_by'][$index], $attributes['name'], $attributes['privileg'][$name_], $k, $oid, $attributes['subform_layer_id'][$index], $attributes['subform_layer_privileg'][$index], $attributes['embedded'][$index], $lock[$k], $fontsize, $this->strPleaseSelect);
+													$datapart .= Auswahlfeld($layer_id, $name_, $j, $attributes['alias'][$name_], $fieldname_[$f], $dataset[$name_], $enum_value, $enum_output, $attributes['req_by'][$index], $attributes['name'], $attributes['privileg'][$name_], $k, $oid, $attributes['subform_layer_id'][$index], $attributes['subform_layer_privileg'][$index], $attributes['embedded'][$index], $lock[$k], $fontsize, $this->strPleaseSelect, $type);
 													$datapart .= '</td><td align="right" valign="top">';
 												}break;
 												default : {

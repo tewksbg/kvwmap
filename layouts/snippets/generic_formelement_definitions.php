@@ -32,7 +32,7 @@
 		return $datapart;
 	}
 	
-	function Auswahlfeld($layer_id, $name, $j, $alias, $fieldname, $value, $enum_value, $enum_output, $req_by, $attributenames, $privileg, $k, $oid, $subform_layer_id, $subform_layer_privileg, $embedded, $lock, $fontsize, $strPleaseSelect){
+	function Auswahlfeld($layer_id, $name, $j, $alias, $fieldname, $value, $enum_value, $enum_output, $req_by, $attributenames, $privileg, $k, $oid, $subform_layer_id, $subform_layer_privileg, $embedded, $lock, $fontsize, $strPleaseSelect, $type){
 		if($privileg == '0' OR $lock){
 			for($e = 0; $e < count($enum_value); $e++){
 				if($enum_value[$e] == $value){
@@ -53,7 +53,9 @@
 			else{
 				$datapart .= 'onchange="set_changed_flag(currentform.changed_'.$layer_id.'_'.$oid.')"';
 			}
-			$datapart .= 'id="'.$name.'_'.$k.'" name="'.$fieldname.'">';
+			$datapart .= 'id="'.$name.'_'.$k.'" name="'.$fieldname.'"';
+#      if (substr($type, 0, 1) == '_') $datapart .= ' multiple';
+      $datapart .= '>';
 			$datapart .= '<option value="">-- '.$strPleaseSelect.' --</option>';
 			for($e = 0; $e < count($enum_value); $e++){
 				$datapart .= '<option ';
