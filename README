@@ -1,25 +1,29 @@
 Summary
 
-Kvwmap is a system for creating an Internet GIS application. It is based on PHP and the use of the MapServer, a MySQL and a Postgres database with PostGIS extension. The user interface is dynamically delivered to the clients via phpMapScript according to the settings for the users and the map contents. The basis for the data can be anything that is read by the UMN-MapServer.
+Kvwmap is a system for creating an Internet GIS application. It is based on PHP and the use of the MapServer,
+a MySQL and a Postgres database with PostGIS extension. The user interface is dynamically delivered to the
+clients via phpMapScript according to the settings for the users and the map contents. The basis for the data
+can be anything that is read by the UMN-MapServer.
 
-In addition to the map functions of the UMN MapServer such as navigation and query, some specialist applications are especially designed for public administrations such as cadastral and surveying offices and district administrations. Together with the appropriate data to be edited and processed, the functions of the tray are formed. A description of the currently available trays can be found in the documentation.
+In addition to the map functions of the UMN MapServer such as navigation and query, some specialist applications
+are especially designed for public administrations such as cadastral and surveying offices and district administrations.
+Together with the appropriate data to be edited and processed, the functions of the tray are formed. A description of the
+currently available trays can be found in the documentation.
 
-For instructions on how to install the client server application, refer to README-INSTALL-Unix for Unix/Linux and README-INSTALL-Win32 for Windows.
+For instructions on how to install the client server application, refer to README-INSTALL-Unix for Unix/Linux and
+README-INSTALL-Win32 for Windows.
 
 The list of changes as html version can be found under help / changelog.htm.
 
 For more information and a complete documentation visit (Note: Site is in German):
-
 https://www.kvwmap.de
 
 Or the documentation under help
 
 For help, hints and bug reports please use the mailing list (Note: Email list is in German):
-
 kvwmap-users@lists.sourceforge.net
 
 Browse the list at (Note: Site is in German):
-
 http://sourceforge.net/mailarchive/forum.php?forum=kvwmap-users
 
 Kvwmap is licensed under the GNU Public License.
@@ -39,7 +43,8 @@ Michael Müller
 Conrad Gühler
 Hauke Christoph
 
-The project was funded mainly by the Cadastral Authority Bad Doberan and various other counties in Mecklenburg / Vorpommern.  This is for the original software.
+The project was funded mainly by the Cadastral Authority Bad Doberan and various other counties in
+Mecklenburg / Vorpommern.  This is for the original software.
 
 Services for the establishment and further development are offered by the company GDI-Service.
 peter.korduan@gdi-service.de
