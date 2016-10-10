@@ -1,3 +1,4 @@
+<!--Pre-->
 <?php
 ####################################################################
 #                                                                  #
@@ -17,23 +18,23 @@ define('GEORG_AUFTRAGSART', 'Auskunft');
 define('GEORG_TITEL', 'Auszug ALB, Auszug ALK');
 define('GEORG_VERMSTELLE', '13913');
 define('GEORG_RECHNUNGSNUMMER', '63000000');
-define('GEORG_VORLAGE', 'Gebührenbescheid 2 S. o. MwSt AUS S');
-define('GEORG_BEZALB', '2.1.1      Auszüge aus dem ALB -AUS-');
-define('GEORG_BEZALK', '2.1.3      Auszüge aus den Nachweisen LK');
-define('GEORG_TEXT1ALB', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT2ALB', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT3ALB', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT4ALB', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT1ALK', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT2ALK', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT3ALK', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT4ALK', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT5ALK', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT6ALK', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT7ALK', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_TEXT8ALK', '[2]{\b Auszüge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
-define('GEORG_KLASSEALB', 'Auszüge Buchwerk/Listen');
-define('GEORG_KLASSEALK', 'Auszüge Buchwerk/Listen');
+define('GEORG_VORLAGE', 'GebÃ¼hrenbescheid 2 S. o. MwSt AUS S');
+define('GEORG_BEZALB', '2.1.1      AuszÃ¼ge aus dem ALB -AUS-');
+define('GEORG_BEZALK', '2.1.3      AuszÃ¼ge aus den Nachweisen LK');
+define('GEORG_TEXT1ALB', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT2ALB', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT3ALB', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT4ALB', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT1ALK', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT2ALK', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT3ALK', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT4ALK', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT5ALK', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT6ALK', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT7ALK', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_TEXT8ALK', '[2]{\b AuszÃ¼ge aus dem Katasterbuchwerk, aus Verzeichnissen und Listen');
+define('GEORG_KLASSEALB', 'AuszÃ¼ge Buchwerk/Listen');
+define('GEORG_KLASSEALK', 'AuszÃ¼ge Buchwerk/Listen');
 
 ?>
 
